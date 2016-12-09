@@ -186,6 +186,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/configs/calmodule.cfg:system/vendor/etc/calmodule.cfg
 
+# WiFi HAL
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service
+
 # Wifi
 PRODUCT_PACKAGES += \
     libqsap_sdk \
