@@ -136,9 +136,9 @@ PRODUCT_PACKAGES += \
     xtwifi.conf \
     sap.conf
 
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
+# HIDL
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
 
 # Init scripts
 PRODUCT_PACKAGES += \
