@@ -204,7 +204,8 @@ PRODUCT_PACKAGES += \
 
 # Power HAL
 PRODUCT_PACKAGES += \
-    power.msm8916
+    power.msm8916 \
+    android.hardware.power@1.0-impl
 
 # IRSC
 PRODUCT_COPY_FILES += \
