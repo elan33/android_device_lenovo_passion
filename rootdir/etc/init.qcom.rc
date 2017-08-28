@@ -35,7 +35,7 @@ on early-init
     mount debugfs debugfs /sys/kernel/debug
 
 on init
-    export LD_SHIM_LIBS /system/vendor/lib64/libizat_core.so|libshims_get_process_name.so
+    export LD_SHIM_LIBS /system/vendor/lib64/libizat_core.so|libshims_get_process_name.so:/system/vendor/lib/libmmcamera2_stats_algorithm.so|libc_util.so:/system/vendor/lib/libmmcamera_wavelet_lib.so|libc_util.so
 
     # Set permissions for persist partition
     mkdir /persist 0771 system system

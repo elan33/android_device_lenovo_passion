@@ -84,6 +84,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     Snap \
+    libc_util \
     android.hardware.camera.provider@2.4-impl-legacy
 
 # Display
