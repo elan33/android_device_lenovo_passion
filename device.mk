@@ -90,7 +90,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    Snap \
+    android.hardware.camera.provider@2.4-impl
 
 # Display
 PRODUCT_PACKAGES += \
