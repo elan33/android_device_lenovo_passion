@@ -190,6 +190,7 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-impl-bcm \
+    android.hardware.nfc@1.0-service \
     libnfc \
     libnfc_jni \
     com.android.nfc_extras \
