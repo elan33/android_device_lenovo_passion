@@ -143,8 +143,8 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 USE_OPENGL_RENDERER := true
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/lenovo/passion/sepolicy
-include device/qcom/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += device/lenovo/passion/sepolicy
+#include device/qcom/sepolicy/sepolicy.mk
 
 # WiFi
 BOARD_HAS_QCOM_WLAN := true

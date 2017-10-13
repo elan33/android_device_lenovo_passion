@@ -292,7 +292,6 @@ on property:sys.listeners.registered=true
 service fast_charger_sw /system/bin/fast_charger_sw
     class  main
     user root
-    seclabel u:r:fast_charger_sw:s0
 #lenovo-sw weiweij added for fast_charger_sw fast charger switch dameon end
 
 #lenovo-sw, chenzz3, added fingerprint daemon service, begin
@@ -301,7 +300,6 @@ service vfmService /system/bin/vfmService
     user system
     group system
     class main
-    seclabel u:r:vfmService:s0
     disabled
 
 on post-fs
