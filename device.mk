@@ -115,6 +115,10 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
+# Gatekeeper HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl
+
 # Gps
 PRODUCT_PACKAGES += \
     gps.msm8916 \
