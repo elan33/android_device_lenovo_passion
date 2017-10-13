@@ -193,6 +193,7 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-service \
     libnfc \
     libnfc_jni \
+    nfc_nci.msm8916 \
     com.android.nfc_extras \
     NfcNci \
     Tag
