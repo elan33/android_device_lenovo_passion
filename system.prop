@@ -70,6 +70,7 @@ media.msm8939hw=0
 mm.enable.smoothstreaming=true
 mmp.enable.3g2=true
 media.aac_51_output_enabled=true
+persist.media.treble_omx=false
 
 # Netmgr
 ro.use_data_netmgrd=true
