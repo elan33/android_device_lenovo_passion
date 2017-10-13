@@ -187,11 +187,6 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-ifneq ($(QCPATH),)
-PRODUCT_PACKAGES += \
-    libOmxVdecHevc
-endif
-
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-impl \
