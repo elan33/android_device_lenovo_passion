@@ -28,7 +28,6 @@ vendor/lib64/libacdbrtac.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libFlacSwDec.so
 vendor/etc/msm_irqbalance.conf
-vendor/etc/audio_effects.conf
 etc/mixer_paths_mtp.xml
 etc/audio_policy.conf
 etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
