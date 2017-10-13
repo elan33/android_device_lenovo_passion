@@ -284,7 +284,6 @@ on boot
     chown system system /dev/vfsspi
     mkdir /data/validity 0775 system system
     mkdir /dev/validity 0775 system system
-     start fingerprintd
 
 on property:sys.listeners.registered=true
      start vfmService
@@ -304,12 +303,6 @@ service vfmService /system/bin/vfmService
     class main
     seclabel u:r:vfmService:s0
     disabled
-
-#fingerpirntd
-service fingerprintd /system/bin/fingerprintd
-    class late_start
-    user system
-#lenovo-sw, chenzz3, added fingerprint daemon service, end
 
 on post-fs
     chown system system /sys/class/power_supply/ext-charger/fast_charger_is_engineermode

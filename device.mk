@@ -107,7 +107,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
-    fingerprintd
+    android.hardware.biometrics.fingerprint@2.0-service
 
 # FM
 PRODUCT_PACKAGES += \
