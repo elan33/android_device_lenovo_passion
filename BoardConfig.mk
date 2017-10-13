@@ -120,7 +120,6 @@ TARGET_SYSTEM_PROP += device/lenovo/passion/system.prop
 # Qualcomm support
 BOARD_USES_QC_TIME_SERVICES := true
 TARGET_POWERHAL_VARIANT := qcom
-TARGET_RIL_VARIANT := caf
 #TARGET_TAP_TO_WAKE_NODE := "/sys/class/tp_gesture/tp_device/tp_gesture_id"
 ifneq ($(QCPATH),)
 BOARD_USES_QCNE := true
@@ -138,6 +137,9 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 # Render
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 USE_OPENGL_RENDERER := true
+
+# RIL
+TARGET_RIL_VARIANT := caf
 
 # SELinux
 #BOARD_SEPOLICY_DIRS += device/lenovo/passion/sepolicy

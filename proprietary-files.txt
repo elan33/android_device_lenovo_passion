@@ -372,14 +372,12 @@ vendor/lib64/libmm-als.so
 bin/netmgrd
 bin/qmuxd
 bin/radish
-bin/rild
 bin/rmt_storage
 bin/tftp_server
 etc/permissions/qcrilhook.xml
 etc/permissions/qcnvitems.xml
 -framework/qcnvitems.jar|07661b43bc3ef8d7b42ef9ab03e358ed7759c392
 -framework/qcrilhook.jar|fdaaf747df3353d1c96546280edfa10f3efeb59d
-lib/libril.so
 lib/libnetd_client.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneqmiutils.so
@@ -393,7 +391,6 @@ vendor/lib/libsystem_health_mon.so
 vendor/lib/libxml.so
 vendor/lib/libconfigdb.so
 vendor/lib/liblqe.so
-lib64/libril.so
 lib64/libnetd_client.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneqmiutils.so
