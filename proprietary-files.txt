@@ -446,7 +446,4 @@ etc/firmware/ice40.bin
 # WiFi
 vendor/lib/libxtwifi_ulp_adaptor.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
-etc/hostapd/hostapd.accept
-etc/hostapd/hostapd_default.conf
-etc/hostapd/hostapd.deny
 etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
