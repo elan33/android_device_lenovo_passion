@@ -42,13 +42,13 @@ static struct light_state_t g_battery;
 static int g_attention = 0;
 
 char const*const RED_LED_FILE
-        = "/sys/class/leds/rgbled/brightness";
+        = "/sys/class/leds/red/brightness";
 
 char const*const GREEN_LED_FILE
-        = "/sys/class/leds/rgbled/brightness";
+        = "/sys/class/leds/green/brightness";
 
 char const*const BLUE_LED_FILE
-        = "/sys/class/leds/rgbled/brightness";
+        = "/sys/class/leds/blue/brightness";
 
 char const*const LCD_FILE
         = "/sys/class/leds/lcd-backlight/brightness";
@@ -57,13 +57,13 @@ char const*const BUTTON_FILE
         = "/sys/class/leds/button-backlight/brightness";
 
 char const*const RED_BLINK_FILE
-        = "/sys/class/leds/rgbled/blink";
+        = "/sys/class/leds/red/blink";
 
 char const*const GREEN_BLINK_FILE
-        = "/sys/class/leds/rgbled/blink";
+        = "/sys/class/leds/green/blink";
 
 char const*const BLUE_BLINK_FILE
-        = "/sys/class/leds/rgbled/blink";
+        = "/sys/class/leds/blue/blink";
 
 /**
  * device methods
