@@ -5,7 +5,7 @@ vendor/lib64/libadsprpc.so
 
 # Audio
 bin/msm_irqbalance
-lib/hw/audio.primary.msm8916.so
+lib/hw/audio.primary.msm8916.so:vendor/lib/hw/audio.primary.msm8916.so
 lib/libtinycompress.so|d2f3fba9008972e04b06c43b20c1456a2e059c66
 lib/libtfa98xx.so
 vendor/lib/hw/sound_trigger.primary.msm8916.so
@@ -19,7 +19,7 @@ vendor/lib/libhwdaphal.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libacdbloader.so
 vendor/lib/libFlacSwDec.so
-lib64/hw/audio.primary.msm8916.so
+lib64/hw/audio.primary.msm8916.so:vendor/lib64/hw/audio.primary.msm8916.so
 lib64/libtinycompress.so|a1bdacd21da01341eb50435e507f7d49366605f2
 lib64/libtfa98xx.so
 vendor/lib64/libacdb-fts.so
