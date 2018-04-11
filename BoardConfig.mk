@@ -53,8 +53,7 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 BACKLIGHT_PATH := "/sys/class/leds/button-backlight/brightness"
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
+# Lineagehw
 BOARD_HARDWARE_CLASS += \
     hardware/lineage/lineagehw \
     device/lenovo/passion/lineagehw
