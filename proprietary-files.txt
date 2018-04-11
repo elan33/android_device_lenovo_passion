@@ -415,7 +415,7 @@ etc/data/qmi_config.xml
 etc/data/dsi_config.xml
 
 # Sensorhub
-lib64/hw/sensors.msm8916.so
+lib64/hw/sensors.msm8916.so:lib64/sensors.passion.so
 vendor/lib/libcalmodule_gyroscope.so
 vendor/lib64/libcalmodule_akm.so
 vendor/lib64/libcalmodule_gyroscope.so
