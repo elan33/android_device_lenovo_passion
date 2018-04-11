@@ -175,8 +175,11 @@ PRODUCT_PACKAGES += \
     libxml2
 
 # Sensor
-PRODUCT_COPY_FILES += \
-  $(LOCAL_PATH)/configs/calmodule.cfg:system/vendor/etc/calmodule.cfg
+PRODUCT_PACKAGES += \
+    libcalmodule_common \
+    sensors.native \
+    sensors.msm8916 \
+    calmodule.cfg \
 
 # Wifi
 PRODUCT_PACKAGES += \
