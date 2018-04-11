@@ -317,6 +317,10 @@ vendor/firmware/BCM20795A2_001.003.025.0005.0050_Generic_I2C_NCD_Unsigned_config
 vendor/firmware/BCM20795A2_001.003.025.0005.0051_Customers_China_NCD_Unsigned_configdata.ncd
 etc/libnfc-brcm.conf
 etc/libnfc-brcm-20795a20.conf
+etc/nfc_wallet.conf
+etc/nfcee_access.xml
+etc/nfcse.cfg
+lib64/hw/nfc_nci.bcm2079x.default.so
 
 # Perf
 vendor/bin/perfd
