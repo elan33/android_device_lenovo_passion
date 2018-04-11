@@ -46,7 +46,7 @@ char NativeSensorManager::virtualSensorName[VIRTUAL_SENSOR_COUNT][SYSFS_MAXLEN];
 
 const struct sensor_t NativeSensorManager::virtualSensorList [VIRTUAL_SENSOR_COUNT] = {
 	[ORIENTATION] = {
-		.name = virtualSensorName[ORIENTATION],
+		.name = "oem-orientation",
 		.vendor = "oem",
 		.version = 1,
 		.handle = '_dmy',
@@ -67,7 +67,7 @@ const struct sensor_t NativeSensorManager::virtualSensorList [VIRTUAL_SENSOR_COU
 	},
 
 	[PSEUDO_GYROSCOPE] = {
-		.name = virtualSensorName[PSEUDO_GYROSCOPE],
+		.name = "oem-pseudo-gyro",
 		.vendor = "oem",
 		.version = 1,
 		.handle = '_dmy',
@@ -88,7 +88,7 @@ const struct sensor_t NativeSensorManager::virtualSensorList [VIRTUAL_SENSOR_COU
 	},
 
 	[ROTATION_VECTOR] = {
-		.name = virtualSensorName[ROTATION_VECTOR],
+		.name = "oem-rotation-vector",
 		.vendor = "oem",
 		.version = 1,
 		.handle = '_dmy',
@@ -130,7 +130,7 @@ const struct sensor_t NativeSensorManager::virtualSensorList [VIRTUAL_SENSOR_COU
 	},
 
 	[LINEAR_ACCELERATION] = {
-		.name = virtualSensorName[LINEAR_ACCELERATION],
+		.name = "oem-linear-acceleration",
 		.vendor = "oem",
 		.version = 1,
 		.handle = '_dmy',
@@ -151,7 +151,7 @@ const struct sensor_t NativeSensorManager::virtualSensorList [VIRTUAL_SENSOR_COU
 	},
 
 	[GRAVITY] = {
-		.name = virtualSensorName[GRAVITY],
+		.name = "oem-gravity",
 		.vendor = "oem",
 		.version = 1,
 		.handle = '_dmy',
