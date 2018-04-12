@@ -18,6 +18,9 @@
 /sys/board_properties/tpd_suspend_status            u:object_r:sysfs_tpd:s0
 /sys/board_properties/tpd_glove_status              u:object_r:sysfs_tpd:s0
 
+# Location
+/system/vendor/bin/location-mq                      u:object_r:location_exec:s0
+
 # tfa9890
 /dev/i2c-4									u:object_r:audio_device:s0
 
