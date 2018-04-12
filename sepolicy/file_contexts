@@ -9,9 +9,6 @@
 /sys/devices/soc.0/gpio_keys.69(/.*)?						u:object_r:sysfs_fast_charger_sw:s0
 /sys/devices/soc.0/78b8000.i2c/i2c-4/4-006b/power_supply/ext-charger(/.*)?	u:object_r:sysfs_fast_charger_sw:s0
 
-# Camera
-/data/cam_socket[12]                                    			u:object_r:camera_socket:s0
-
 # Fingerprint
 /dev/vfsspi									u:object_r:vfs_device:s0
 /dev/validity(/.*)?							        u:object_r:fingerprintd_data_file:s0
