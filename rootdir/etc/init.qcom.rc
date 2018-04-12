@@ -196,6 +196,7 @@ on boot
     chmod 0660 /sys/devices/soc.0/78b9000.i2c/i2c-5/5-005d/keypad_enable
 
     start rmt_storage
+    start vfmService
 
 # access permission for secure touch
     chmod 0660 /sys/devices/soc.0/78b9000.i2c/i2c-5/5-0020/secure_touch_enable
@@ -295,7 +296,6 @@ service vfmService /system/bin/vfmService
     group system
     class main
     seclabel u:r:vfmService:s0
-    disabled
 
 #fingerpirntd
 service fingerprintd /system/bin/fingerprintd
@@ -502,7 +502,6 @@ service qcom-c_main-sh /system/bin/sh /init.class_main.sh
 on property:vold.decrypt=trigger_restart_framework
     start qcom-c_main-sh
     start wcnss-service
-    start vfmService
 
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
