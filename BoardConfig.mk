@@ -145,6 +145,12 @@ BOARD_SEPOLICY_DIRS += device/lenovo/passion/sepolicy
 include device/qcom/sepolicy/sepolicy.mk
 include device/qcom/sepolicy/legacy-sepolicy.mk
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib64/libizat_core.so|libshims_get_process_name.so \
+    /system/vendor/lib/libmmcamera2_stats_algorithm.so|libc_util.so \
+    /system/vendor/lib/libmmcamera_wavelet_lib.so|libc_util.so
+
 # WiFi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HAS_QCOM_WLAN_SDK := true
