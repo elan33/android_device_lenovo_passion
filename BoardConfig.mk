@@ -137,8 +137,9 @@ USE_OPENGL_RENDERER := true
 TARGET_RIL_VARIANT := caf
 
 # SELinux
-#BOARD_SEPOLICY_DIRS += device/lenovo/passion/sepolicy
-#include device/qcom/sepolicy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += device/lenovo/passion/sepolicy
+include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/legacy-sepolicy.mk
 
 # WiFi
 BOARD_HAS_QCOM_WLAN := true
