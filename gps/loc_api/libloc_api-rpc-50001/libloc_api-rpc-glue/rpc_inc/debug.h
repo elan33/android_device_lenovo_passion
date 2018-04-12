@@ -1,4 +1,4 @@
-/* Copyright (c) 2011-2013,2015 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2011, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -9,7 +9,7 @@
  *       copyright notice, this list of conditions and the following
  *       disclaimer in the documentation and/or other materials provided
  *       with the distribution.
- *     * Neither the name of The Linux Foundation, nor the names of its
+ *     * Neither the name of The Linux Foundation nor the names of its
  *       contributors may be used to endorse or promote products derived
  *       from this software without specific prior written permission.
  *
@@ -24,44 +24,46 @@
  * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
  * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
  */
-#ifndef __MSG_TASK__
-#define __MSG_TASK__
 
-#include <LocThread.h>
+#ifndef DEBUG_H
+#define DEBUG_H
 
-struct LocMsg {
-    inline LocMsg() {}
-    inline virtual ~LocMsg() {}
-    virtual void proc() const = 0;
-    inline virtual void log() const {}
-};
+#include <stdio.h>
 
-class MsgTask : public LocRunnable {
-    const void* mQ;
-    LocThread* mThread;
-    friend class LocThreadDelegate;
-protected:
-    virtual ~MsgTask();
-public:
-    MsgTask(LocThread::tCreate tCreator, const char* threadName = NULL, bool joinable = true);
-    MsgTask(const char* threadName = NULL, bool joinable = true);
-    // this obj will be deleted once thread is deleted
-    void destroy();
-    void sendMsg(const LocMsg* msg) const;
-    // Overrides of LocRunnable methods
-    // This method will be repeated called until it returns false; or
-    // until thread is stopped.
-    virtual bool run();
+#define LOG_TAG "LocSvc_rpc"
+#include <utils/Log.h>
 
-    // The method to be run before thread loop (conditionally repeatedly)
-    // calls run()
-    virtual void prerun();
+#define PRINT(x...) do {                                    \
+        fprintf(stdout, "%s(%d) ", __FUNCTION__, __LINE__); \
+        fprintf(stdout, ##x);                               \
+        ALOGD(x);                               \
+    } while(0)
 
-    // The method to be run after thread loop (conditionally repeatedly)
-    // calls run()
-    inline virtual void postrun() {}
-};
+#ifdef DEBUG
+#define D PRINT
+#else
+#define D(x...) do { } while(0)
+#endif
 
-#endif //__MSG_TASK__
+#ifdef VERBOSE
+#define V PRINT
+#else
+#define V(x...) do { } while(0)
+#endif
+
+#define E(x...) do {                                        \
+        fprintf(stderr, "%s(%d) ", __FUNCTION__, __LINE__); \
+        fprintf(stderr, ##x);                               \
+        ALOGE(x);                                            \
+    } while(0)
+
+#define FAILIF(cond, msg...) do {                                              \
+        if (__builtin_expect (cond, 0)) {                                      \
+            fprintf(stderr, "%s:%s:(%d): ", __FILE__, __FUNCTION__, __LINE__); \
+            fprintf(stderr, ##msg);                                            \
+            ALOGE(##msg);                                                       \
+        }                                                                      \
+    } while(0)
+
+#endif/*DEBUG_H*/
