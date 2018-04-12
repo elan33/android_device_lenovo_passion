@@ -56,6 +56,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl \
+    android.hardware.soundtrigger@2.0-impl \
+    android.hardware.broadcastradio@1.0-impl \
     audiod \
     audio.a2dp.default \
     audio.r_submix.default \
@@ -72,7 +74,8 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor \
-    android.hardware.bluetooth@1.0-impl
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service 
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -190,6 +193,8 @@ PRODUCT_COPY_FILES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    libc2dcolorconvert \
+    libOmxSwVencHevc \
     libextmedia_jni \
     libOmxAacEnc \
     libOmxAmrEnc \
@@ -224,6 +229,10 @@ PRODUCT_PACKAGES += \
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
+
+# QMI
+PRODUCT_PACKAGES += \
+    libjson \
 
 # RIL
 PRODUCT_PACKAGES += \
