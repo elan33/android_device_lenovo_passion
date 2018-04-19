@@ -39,20 +39,6 @@ etc/acdbdata/MTP/MTP_Handset_cal.acdb
 etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 etc/acdbdata/MTP/MTP_Headset_cal.acdb
 etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
-etc/acdbdata/QRD/QRD_General_cal.acdb
-etc/acdbdata/QRD/QRD_Global_cal.acdb
-etc/acdbdata/QRD/QRD_Handset_cal.acdb
-etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-etc/acdbdata/QRD/QRD_Headset_cal.acdb
-etc/acdbdata/QRD/QRD_Speaker_cal.acdb
-etc/acdbdata/QRD/msm8939-snd-card-skul/QRD_SKUL_Bluetooth_cal.acdb
-etc/acdbdata/QRD/msm8939-snd-card-skul/QRD_SKUL_General_cal.acdb
-etc/acdbdata/QRD/msm8939-snd-card-skul/QRD_SKUL_Global_cal.acdb
-etc/acdbdata/QRD/msm8939-snd-card-skul/QRD_SKUL_Handset_cal.acdb
-etc/acdbdata/QRD/msm8939-snd-card-skul/QRD_SKUL_Hdmi_cal.acdb
-etc/acdbdata/QRD/msm8939-snd-card-skul/QRD_SKUL_Headset_cal.acdb
-etc/acdbdata/QRD/msm8939-snd-card-skul/QRD_SKUL_Speaker_cal.acdb
 etc/tfa98xx/P1_SPK_0801.speaker
 etc/tfa98xx/TFA9890_N1B12_N1C3_v3.config
 etc/tfa98xx/music.eq
@@ -161,13 +147,6 @@ etc/firmware/cpp_firmware_v1_4_0.fw
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
-
-# Display Color Calibration
-vendor/lib/libmm-qdcm.so
-vendor/lib/libmm-disp-apis.so
-vendor/lib64/libmm-qdcm.so
-vendor/lib64/libmm-disp-apis.so
--app/colorservice/colorservice.apk|ac958a2aca811a9038e34013ff9e2ff5edc5dbbb
 
 # DRM
 bin/qseecomd
@@ -287,20 +266,11 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libdisp-aba.so
--framework/com.qti.snapdragon.sdk.display.jar|df8ca9d5e9cdbf66b87d8f881240adecf5edabed
-etc/permissions/com.qti.snapdragon.sdk.display.xml
 
 # Graphics firmware
-etc/firmware/a300_pm4.fw
-etc/firmware/a300_pfp.fw
-etc/firmware/a330_pfp.fw
-etc/firmware/a225_pfp.fw
 etc/firmware/a420_pfp.fw
 etc/firmware/leia_pfp_470.fw
-etc/firmware/a330_pm4.fw
-etc/firmware/a225_pm4.fw
 etc/firmware/leia_pm4_470.fw
-etc/firmware/a225p5_pm4.fw
 etc/firmware/a420_pm4.fw
 
 # Media
