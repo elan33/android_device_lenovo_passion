@@ -513,10 +513,6 @@ service rmt_storage /system/bin/rmt_storage
     shutdown critical
     ioprio rt 0
 
-service tftp_server /system/bin/tftp_server
-   class main
-   user root
-
 on property:wc_transport.start_hci=true
     start start_hci_filter
 
