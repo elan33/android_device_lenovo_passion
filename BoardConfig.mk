@@ -133,6 +133,7 @@ BOARD_USES_QC_TIME_SERVICES := true
 TARGET_POWERHAL_VARIANT := qcom
 TARGET_TAP_TO_WAKE_NODE := "/sys/board_properties/tpd_suspend_status"
 BOARD_USES_QCOM_HARDWARE := true
+MALLOC_SVELTE := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/lenovo/passion/rootdir/etc/fstab.qcom
