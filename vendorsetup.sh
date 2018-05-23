@@ -1,2 +1,2 @@
-add_lunch_combo aosp_passion-eng
-add_lunch_combo aosp_passion-userdebug
+add_lunch_combo rr_passion-eng
+add_lunch_combo rr_passion-userdebug
