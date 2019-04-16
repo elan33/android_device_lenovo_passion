@@ -96,6 +96,9 @@ persist.rild.nitz_short_ons_3=
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Other
+ro.board.platform=msm8916
+
 # Qualcomm
 persist.timed.enable=true
 com.qc.hardware=true
