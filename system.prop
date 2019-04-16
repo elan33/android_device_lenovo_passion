@@ -55,7 +55,7 @@ debug.enable.sglscale=1
 ro.qualcomm.cabl=0
 
 # DRM
-drm.service.enabled=true
+drm.service.enabled=1
 
 # Factory reset protection
 ro.frp.pst=/dev/block/bootdevice/by-name/config
