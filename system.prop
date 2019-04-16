@@ -27,6 +27,7 @@ ro.qualcomm.bluetooth.map=true
 ro.qualcomm.bluetooth.nap=true
 ro.qualcomm.bluetooth.opp=true
 ro.qualcomm.bluetooth.pbap=true
+vendor.qcom.bluetooth.soc=pronto
 
 # Camera
 camera2.portability.force_api=1
