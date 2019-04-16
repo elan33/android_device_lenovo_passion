@@ -16,13 +16,10 @@
 # Inherit device configuration
 $(call inherit-product, device/lenovo/passion/full_passion.mk)
 
-# Inherit some common CM stuff.
-#$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common DotOS stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Boot animation
-#TARGET_SCREEN_WIDTH := 1080
-#TARGET_SCREEN_HEIGHT := 1920
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Override build properties.
@@ -33,7 +30,7 @@ BUILD_FINGERPRINT := Lenovo/passion_row/P1a42:6.0.1/MMB29M/P1a42_S288_160721_ROW
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := passion
-PRODUCT_NAME := aosp_passion
+PRODUCT_NAME := dot_passion
 PRODUCT_BRAND := Lenovo
 PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_RELEASE_NAME := passion
